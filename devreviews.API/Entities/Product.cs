@@ -15,5 +15,16 @@ namespace devreviews.API.Entities
         public void AddReview(ProductReiview review){
             Reviews.Add(review);
         }
+
+        public void Update(string description, decimal price){
+            Description = description;
+            Price = price;
+        }
+        public Product(string title, string description, decimal price)
+        {
+            Title = title;
+            Description = description;
+            Price = price;
+        }
     }
 }

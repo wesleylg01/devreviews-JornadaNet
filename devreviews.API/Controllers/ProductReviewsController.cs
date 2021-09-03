@@ -7,7 +7,7 @@ namespace devreviews.API.Controllers
     [Route("api/produtcs/{productId}/productreviews")]
     public class ProductReviewsController : ControllerBase
     {
-        [HttpGet("{id)")]
+        [HttpGet("{id}")]
         public IActionResult GetById (int productId, int id){
             return Ok();
         }
